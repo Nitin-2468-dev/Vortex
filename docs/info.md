@@ -1,20 +1,22 @@
-<!---
+# Vortex
 
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
+Vortex is an ASIC project exploring hardware acceleration for a
+motion-driven, pixelated fluid simulation.
 
 ## How it works
 
-Explain how your project works
+The current prototype receives digital inputs and produces an
+8-bit output. The existing design is a baseline Tiny Tapeout
+example; the FLIP simulation hardware will be developed incrementally.
 
 ## How to test
 
-Explain how to use your project
+The project uses Cocotb and Icarus Verilog for RTL simulation.
+Run the test suite from the test directory:
 
-## External hardware
-
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+```bash
+cd test
+make clean
+make
+python -m cocotb_tools.check_results results.xml
+```
