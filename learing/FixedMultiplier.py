@@ -3,9 +3,14 @@ from amaranth.sim import Simulator
 from amaranth.back import rtlil, verilog
 from amaranth.lib.wiring import In, Out
 from amaranth.lib import wiring
+from amaranth.back import verilog
+from pathlib import Path
+
+print("Running from:", Path.cwd())
+print("Python file:", Path(__file__).resolve())
 
 class FixedMultiplier(wiring.Component):
-    "multiplies two 16-bit with 12 fractions"
+    "multiplies two 8-bit with 12 fractions"
     
     a:In(signed(16))
     b:In(signed(16))
@@ -42,3 +47,11 @@ async def bench(ctx):
 sim = Simulator(dut)
 sim.add_testbench(bench)
 sim.run()
+
+
+with open("FixedMultiplier.v", "w") as f:
+    f.write(verilog.convert(
+                dut,
+                ports=[dut.a, dut.b, dut.product],
+                )
+            )
