@@ -1,0 +1,16 @@
+
+read_verilog src/Clocked_FixedMult.v
+
+hierarchy -top Clocked_FixedMult
+
+synth -top Clocked_FixedMult -noabc
+
+dfflibmap -liberty ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+abc -liberty ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+clean
+
+tee -o synth/area_report.txt stat -liberty ~/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+write_verilog -noattr synth/Clocked_FixedMult_mapped.v

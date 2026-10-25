@@ -1,0 +1,62 @@
+
+6. Printing statistics.
+
+=== Clocked_FixedMult ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     1248        - wires
+     1309        - wire bits
+        6        - public wires
+       67        - public wire bits
+        5        - ports
+       66        - port bits
+     1262 9.89E+03 cells
+        3   22.522   sky130_fd_sc_hd__a211oi_1
+        5   37.536   sky130_fd_sc_hd__a21boi_0
+        8   60.058   sky130_fd_sc_hd__a21o_1
+       44  220.211   sky130_fd_sc_hd__a21oi_1
+        2   17.517   sky130_fd_sc_hd__a22o_1
+        9   67.565   sky130_fd_sc_hd__a22oi_1
+        1    8.758   sky130_fd_sc_hd__a2bb2oi_1
+        1    10.01   sky130_fd_sc_hd__a311o_1
+        2   17.517   sky130_fd_sc_hd__a311oi_1
+        1    8.758   sky130_fd_sc_hd__a31o_1
+        2   12.512   sky130_fd_sc_hd__a31oi_1
+        3   30.029   sky130_fd_sc_hd__a32o_1
+       19  118.864   sky130_fd_sc_hd__and2_0
+        8   50.048   sky130_fd_sc_hd__and3_1
+        1    8.758   sky130_fd_sc_hd__and3b_1
+        1    8.758   sky130_fd_sc_hd__and4_1
+       34  127.622   sky130_fd_sc_hd__clkinv_1
+       20  400.384   sky130_fd_sc_hd__dfxtp_1
+        6   37.536   sky130_fd_sc_hd__lpflow_inputiso1p_1
+       57  356.592   sky130_fd_sc_hd__lpflow_isobufsrc_1
+      142 1.42E+03   sky130_fd_sc_hd__maj3_1
+      261   979.69   sky130_fd_sc_hd__nand2_1
+       29  181.424   sky130_fd_sc_hd__nand2b_1
+        6   30.029   sky130_fd_sc_hd__nand3_1
+        6   37.536   sky130_fd_sc_hd__nand4_1
+        1    8.758   sky130_fd_sc_hd__nand4b_1
+       45  168.912   sky130_fd_sc_hd__nor2_1
+       14   87.584   sky130_fd_sc_hd__nor2b_1
+       32  160.154   sky130_fd_sc_hd__nor3_1
+        1    10.01   sky130_fd_sc_hd__o211a_1
+        3   22.522   sky130_fd_sc_hd__o211ai_1
+       12   90.086   sky130_fd_sc_hd__o21a_1
+       51  255.245   sky130_fd_sc_hd__o21ai_0
+        9   67.565   sky130_fd_sc_hd__o21bai_1
+        4   35.034   sky130_fd_sc_hd__o22a_1
+        3   18.768   sky130_fd_sc_hd__o22ai_1
+        1    8.758   sky130_fd_sc_hd__o31a_1
+        2   15.014   sky130_fd_sc_hd__o31ai_1
+        3   18.768   sky130_fd_sc_hd__or3_1
+      215 1.88E+03   sky130_fd_sc_hd__xnor2_1
+       42  945.907   sky130_fd_sc_hd__xnor3_1
+      121 1.06E+03   sky130_fd_sc_hd__xor2_1
+       32   760.73   sky130_fd_sc_hd__xor3_1
+
+   Chip area for module '\Clocked_FixedMult': 9888.233600
+     of which used for sequential elements: 400.384000 (4.05%)
+
